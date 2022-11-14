@@ -16,6 +16,9 @@ count	0
 	7
 	8
 	9
+postgres_server_version	12
+	13
+	14
 time_zone	Etc/GMT+12
 	Etc/GMT+11
 	Pacific/Midway
@@ -631,3 +634,33 @@ time_zone	Etc/GMT+12
 	Pacific/Tongatapu
 	Etc/GMT-14
 	Pacific/Kiritimati
+components	additional_admin_functions
+	client_full
+	client_thin
+	client_thin_fib
+	config_storage_server
+	server
+	server_admin
+	ws
+language	ar
+	az
+	bg
+	de
+	el
+	es
+	fr
+	hu
+	hy
+	it
+	ka
+	kk
+	lt
+	lv
+	pl
+	ro
+	ru
+	tk
+	tr
+	uk
+	vi
+	zh
