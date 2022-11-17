@@ -1,159 +1,72 @@
 ﻿Тип ноды	Имя в API	Значение по умолчанию
-application server	name	
-	size	
-	type	
-	label	
-	datastore	
-	unit_number	
-	mount_folder	
-	host_cpu	
-	num_cpu_cores_per_socket	
-	host_memory	
+application server	delete_vm_if_exist	true
+	add_to_AD	
+	host_cpu	4
+	num_cpu_cores_per_socket	2
+	host_memory	4096
 	hostname_vm	
 	host_ip	
-	host_netmask	
+	host_netmask	255.255.255.0
 	host_gateway	
 	host_vmware_vlan	
 	domain_admin_login	
+	domain_admin_pass	
 	vcenter_hostname	
 	vcenter_username	
-	vcenter_datacenter	
+	vcenter_password	
+	vcenter_datacenter	ps140
 	vcenter_cluster	
-	vmware_folder	
-	vm_template	
-	os_type	
-	ansible_user	
-	domain	
+	vmware_folder	/test/1c_linux/
+	vm_template	ubuntu_20_04_20gb_2021_09_09
+	os_type	linux
+	locale	ru_RU.UTF-8
+	time_zone	Europe/Moscow
+	ansible_user	user
+	ansible_ssh_pass	user
+	ansible_become_password	user
+	domain	energo.ru
 	dns_servers	
 	ad_dns_servers	
 	ntp_servers	
-	docker_data_folder	
+	docker_data_folder	/data/docker/dat
 	docker_global_network	
 	linux_comp_ou	
-	ansible_user	
+	ansible_user	user
+	ansible_ssh_pass	user
+	ansible_become_password	user
 	host_ip	
 	host_name	
-	postgres_server_version	
+	postgres_server_version	14
+	postgres_server_work_dir	
+	postgres_port	
+	postgres_pass	
+	listen_addresses	
+	max_connections	
 	linux_cluster_name	
 	linux_cluster_ip	
-	monitor_node	
-	db_dump_path	
+	monitor_port	
+	db_dump_path	/uat.sql
 	domain	
+	time_zone	
 	node_name	
+	central_server	
+	safety_memory_use_for_one_call	
+	critical_memory_size_for_process	
+	temporally_allowed_size_for_process	
+	process_memory_exceed_interval	
+	number_of_is_per_process	
+	number_of_connections_per_process	
 	ansible_user	
+	ansible_ssh_pass	
+	ansible_become_password	
 	host_ip	
 	host_name	
-	service_name	
-	ones_version	
-	ones_base_name	
-	db_name	
+	service_name	1c_uat
+	ones_version	8.3.20.1674
+	ones_base_name	UAT
+	db_name	uat
 	postgres_cluster_name	
-	ones_binary_url	
-	components	
-	language	ru
-
-monitor node	name	
-	size	
-	type	
-	label	
-	datastore	
-	unit_number	
-	mount_folder	
-	host_cpu	
-	num_cpu_cores_per_socket	
-	host_memory	
-	hostname_vm	
-	host_ip	
-	host_netmask	
-	host_gateway	
-	host_vmware_vlan	
-	domain_admin_login	
-	vcenter_hostname	
-	vcenter_username	
-	vcenter_datacenter	
-	vcenter_cluster	
-	vmware_folder	
-	vm_template	
-	os_type	
-	ansible_user	
-	domain	
-	dns_servers	
-	ad_dns_servers	
-	ntp_servers	
-	docker_data_folder	
-	docker_global_network	
-	linux_comp_ou	
-	ansible_user	
-	host_ip	
-	host_name	
-	postgres_server_version	
-	linux_cluster_name	
-	linux_cluster_ip	
-	monitor_node	
-	db_dump_path	
-	domain	
-	node_name	
-	ansible_user	
-	host_ip	
-	host_name	
-	service_name	
-	ones_version	
-	ones_base_name	
-	db_name	
-	postgres_cluster_name	
-	ones_binary_url	
-	components	
-	language	ru
-
-data node	name	
-	size	
-	type	
-	label	
-	datastore	
-	unit_number	
-	mount_folder	
-	host_cpu	
-	num_cpu_cores_per_socket	
-	host_memory	
-	hostname_vm	
-	host_ip	
-	host_netmask	
-	host_gateway	
-	host_vmware_vlan	
-	domain_admin_login	
-	vcenter_hostname	
-	vcenter_username	
-	vcenter_datacenter	
-	vcenter_cluster	
-	vmware_folder	
-	vm_template	
-	os_type	
-	ansible_user	
-	domain	
-	dns_servers	
-	ad_dns_servers	
-	ntp_servers	
-	docker_data_folder	
-	docker_global_network	
-	linux_comp_ou	
-	ansible_user	
-	host_ip	
-	host_name	
-	postgres_server_version	
-	linux_cluster_name	
-	linux_cluster_ip	
-	monitor_node	
-	db_dump_path	
-	domain	
-	node_name	
-	ansible_user	
-	host_ip	
-	host_name	
-	service_name	
-	ones_version	
-	ones_base_name	
-	db_name	
-	postgres_cluster_name	
+	postgres_pass	
 	ones_binary_url	
 	components	
 	language	ru
