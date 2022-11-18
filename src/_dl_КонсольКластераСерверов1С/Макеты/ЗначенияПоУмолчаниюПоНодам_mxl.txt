@@ -1,5 +1,5 @@
 ﻿Тип ноды	Имя в API	Значение по умолчанию
-application server	delete_vm_if_exist	true
+application server	delete_vm_if_exist	Ложь
 	add_to_AD	
 	host_cpu	4
 	num_cpu_cores_per_socket	2
