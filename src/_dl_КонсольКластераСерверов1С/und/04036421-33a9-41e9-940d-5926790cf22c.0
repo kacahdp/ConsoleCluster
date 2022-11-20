@@ -1,0 +1,48 @@
+﻿{
+"node_server_connect_settings": {
+  "monitor_node": {
+    "ansible_user": "user",
+    "ansible_ssh_default_pass": "user",
+    "ansible_ssh_pass": "user",
+    "ansible_become_password": "user",
+    "host_ip": "172.25.170.225",
+    "host_name": "ct-vm-1capp70"
+  },
+  "master_node": {
+    "ansible_user": "user",
+    "ansible_ssh_default_pass": "user",
+    "ansible_ssh_pass": "user",
+    "ansible_become_password": "user",
+    "host_ip": "172.25.170.226",
+    "host_name": "ct-vm-1capp71"
+  },
+  "second_node": [
+  {
+    "ansible_user": "user",
+    "ansible_ssh_default_pass": "user",
+    "ansible_ssh_pass": "user",
+    "ansible_become_password": "user",
+    "host_ip": "172.25.170.227",
+    "host_name": "ct-vm-1capp72"
+  },
+  {
+    "ansible_user": "user",
+    "ansible_ssh_default_pass": "user",
+    "ansible_ssh_pass": "user",
+    "ansible_become_password": "user",
+    "host_ip": "172.25.170.228",
+    "host_name": "ct-vm-1capp73"
+  }
+  ]
+},
+"pg_cluster_settings": {
+      "postgres_server_version": "14",
+      "postgres_pass": "Qqwerty5566",
+      "linux_cluster_name": "cd-cls-dbpg89",
+      "linux_cluster_ip": "172.25.170.231",
+      "monitor_node": "ct-vm-1capp70",
+      "domain": "energo.ru",
+      "db_dump_path": "/uat.sql",
+      "time_zone": "Europe/Moscow"
+}
+}

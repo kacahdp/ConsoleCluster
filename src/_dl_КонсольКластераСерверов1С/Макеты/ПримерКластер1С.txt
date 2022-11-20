@@ -1,0 +1,37 @@
+﻿{
+  "ones_cluster_settings": {
+    "service_name": "1c_uat",
+    "ones_version": "8.3.20.1674",
+    "ones_base_name": "UAT",
+    "db_name": "uat",
+    "postgres_cluster_name": "cd-cls-dbpg89",
+    "postgres_pass": "Qqwerty5566",
+    "ones_binary_url": "https://nexus.energo.ru/repository/binary_data/1c/linux",
+    "components": [
+      "server",
+      "ws",
+      "server_admin"
+    ],
+    "language": "ru"
+  },
+  "ones_nodes": {
+      "ct-vm-1capp74": {
+        "node_name": "ct-vm-1capp74.energo.ru",
+        "ansible_user": "user",
+        "ansible_ssh_default_pass": "user",
+        "ansible_ssh_pass": "user",
+        "ansible_become_password": "user",
+        "host_ip": "172.25.170.229",
+        "host_name": "ct-vm-1capp74"
+      },
+      "ct-vm-1capp75": {
+        "node_name": "ct-vm-1capp75.energo.ru",
+        "ansible_user": "user",
+        "ansible_ssh_default_pass": "user",
+        "ansible_ssh_pass": "user",
+        "ansible_become_password": "user",
+        "host_ip": "172.25.170.230",
+        "host_name": "ct-vm-1capp75"
+      }
+  }
+}

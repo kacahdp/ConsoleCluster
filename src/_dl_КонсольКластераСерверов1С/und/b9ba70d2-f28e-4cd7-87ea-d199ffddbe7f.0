@@ -1,0 +1,63 @@
+﻿{
+  "delete_vm_if_exist": true,
+  "host_ip": "172.25.170.230",
+  "hostname_vm": "ct-vm-1capp75",
+  "host_netmask": "255.255.255.0",
+  "host_gateway": "172.25.170.1",
+  "host_vmware_vlan": "337-prod-ps140",
+  "host_cpu": 4,
+  "num_cpu_cores_per_socket": 2,
+  "host_memory": 4096,
+  "disks": [
+    {
+      "label": "system_disk",
+      "name": "sda",
+      "size": "204800",
+      "datastore": "LEN-DE4000-01-FC-16G-PS140-12T-SSD",
+      "type": "thin",
+      "unit_number": "0",
+      "mount_folder": "/"
+    },
+    {
+      "label": "data_disk",
+      "name": "sdb",
+      "size": "51200",
+      "datastore": "LEN-DE4000-01-FC-16G-PS140-12T-SSD",
+      "type": "thin",
+      "unit_number": "1",
+      "mount_folder": "/data"
+    }
+  ],
+  "domain_admin_login": "",
+  "domain_admin_pass": "",
+  "vcenter_hostname": "vsphere.energo.ru",
+  "vcenter_username": "",
+  "vcenter_password": "",
+  "vcenter_datacenter": "ps140",
+  "vcenter_cluster": "ucs-ps140-dev",
+  "vmware_folder": "/test/1c_linux/",
+  "vm_template": "ubuntu_20_04_20gb_2021_09_09",
+  "os_type": "linux",
+  "locale": "ru_RU.UTF-8",
+  "time_zone": "Europe/Moscow",
+  "ansible_user": "user",
+  "ansible_ssh_default_pass": "user",
+  "ansible_ssh_pass": "user",
+  "ansible_become_password": "user",
+  "domain": "energo.ru",
+  "dns_servers": [
+    "172.26.0.220",
+    "172.26.4.3"
+  ],
+  "ad_dns_servers": [
+    "172.26.0.220",
+    "172.26.4.3"
+  ],
+  "ntp_servers": [
+    "cp-vm-ntp01.energo.ru",
+    "cp-vm-ntp02.energo.ru"
+  ],
+  "docker_data_folder": "/data/docker/data",
+  "docker_global_network": "192.168.128.0/17",
+  "linux_comp_ou": "OU=Linux,OU=Prod,OU=!Environment,DC=energo,DC=ru"
+}
