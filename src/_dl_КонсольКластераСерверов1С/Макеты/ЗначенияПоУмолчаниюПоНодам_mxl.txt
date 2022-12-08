@@ -1,72 +1,72 @@
-﻿Тип ноды	Имя в API	Значение по умолчанию
-application server	delete_vm_if_exist	Ложь
-	add_to_AD	
-	host_cpu	4
-	num_cpu_cores_per_socket	2
-	host_memory	4096
-	hostname_vm	
-	host_ip	
-	host_netmask	255.255.255.0
-	host_gateway	
-	host_vmware_vlan	
-	domain_admin_login	
-	domain_admin_pass	
-	vcenter_hostname	
-	vcenter_username	
-	vcenter_password	
-	vcenter_datacenter	ps140
-	vcenter_cluster	
-	vmware_folder	/test/1c_linux/
-	vm_template	ubuntu_20_04_20gb_2021_09_09
-	os_type	linux
-	locale	ru_RU.UTF-8
-	time_zone	Europe/Moscow
-	ansible_user	user
-	ansible_ssh_pass	user
-	ansible_become_password	user
-	domain	energo.ru
-	dns_servers	
-	ad_dns_servers	
-	ntp_servers	
-	docker_data_folder	/data/docker/dat
-	docker_global_network	
-	linux_comp_ou	
-	ansible_user	user
-	ansible_ssh_pass	user
-	ansible_become_password	user
-	host_ip	
-	host_name	
-	postgres_server_version	14
-	postgres_server_work_dir	
-	postgres_port	
-	postgres_pass	
-	listen_addresses	
-	max_connections	
-	linux_cluster_name	
-	linux_cluster_ip	
-	monitor_port	
-	db_dump_path	/uat.sql
-	domain	
-	time_zone	
-	node_name	
-	central_server	
-	safety_memory_use_for_one_call	
-	critical_memory_size_for_process	
-	temporally_allowed_size_for_process	
-	process_memory_exceed_interval	
-	number_of_is_per_process	
-	number_of_connections_per_process	
-	ansible_user	
-	ansible_ssh_pass	
-	ansible_become_password	
-	host_ip	
-	host_name	
-	service_name	1c_uat
-	ones_version	8.3.20.1674
-	ones_base_name	UAT
-	db_name	uat
-	postgres_cluster_name	
-	postgres_pass	
-	ones_binary_url	
-	components	
-	language	ru
+﻿Тип ноды	Имя в API	Значение по умолчанию	
+	name	sda	
+	size	81920	
+	type	thin	
+	label	system_disk	
+	datastore		
+	unit_number	0	
+	mount_folder	C	
+
+	name	sdb	
+	size	204800	
+	type	thin	
+	label	data_disk	
+	datastore		
+	unit_number	1	
+	mount_folder	D	
+
+	name	sda	
+	size	51200	
+	type	thin	
+	label	system_disk	
+	datastore		
+	unit_number	0	
+	mount_folder	/	
+
+	name	sdb	
+	size	204800	
+	type	thin	
+	label	data_disk	
+	datastore		
+	unit_number	1	
+	mount_folder	/data	
+
+application server	delete_vm_if_exist	Истина	
+	add_to_AD	Ложь	
+	host_cpu	4	
+	num_cpu_cores_per_socket	2	
+	host_memory	4096	
+	host_netmask	255.255.255.0	
+	locale	ru_RU.UTF-8	
+	time_zone	Europe/Moscow	
+	ansible_user	user	
+	ansible_ssh_pass	user	
+	ansible_become_password	user	
+	docker_data_folder	/data/docker/dat	
+	docker_global_network	192.168.128.0/17	
+	postgres_server_version	14	
+	db_dump_path	/uat.sql	
+	time_zone	Europe/Moscow	
+	ones_version	8.3.20.1674	
+	components	server;ws;server_admin	
+	language	ru	
+
+Monitor	delete_vm_if_exist	Истина	
+	add_to_AD	Ложь	
+	host_cpu	1	
+	num_cpu_cores_per_socket	1	
+	host_memory	1024	
+	host_netmask	255.255.255.0	
+	locale	ru_RU.UTF-8	
+	time_zone	Europe/Moscow	
+	ansible_user	user	
+	ansible_ssh_pass	user	
+	ansible_become_password	user	
+	docker_data_folder	/data/docker/dat	
+	docker_global_network	192.168.128.0/17	
+	postgres_server_version	14	
+	db_dump_path	/uat.sql	
+	time_zone	Europe/Moscow	
+	ones_version	8.3.20.1674	
+	components	server;ws;server_admin	
+	language	ru	
