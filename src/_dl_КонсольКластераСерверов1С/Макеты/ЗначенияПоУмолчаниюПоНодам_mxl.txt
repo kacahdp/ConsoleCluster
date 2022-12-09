@@ -51,22 +51,6 @@ application server	delete_vm_if_exist	Истина
 	components	server;ws;server_admin	
 	language	ru	
 
-Monitor	delete_vm_if_exist	Истина	
-	add_to_AD	Ложь	
 	host_cpu	1	
 	num_cpu_cores_per_socket	1	
 	host_memory	1024	
-	host_netmask	255.255.255.0	
-	locale	ru_RU.UTF-8	
-	time_zone	Europe/Moscow	
-	ansible_user	user	
-	ansible_ssh_pass	user	
-	ansible_become_password	user	
-	docker_data_folder	/data/docker/dat	
-	docker_global_network	192.168.128.0/17	
-	postgres_server_version	14	
-	db_dump_path	/uat.sql	
-	time_zone	Europe/Moscow	
-	ones_version	8.3.20.1674	
-	components	server;ws;server_admin	
-	language	ru	
